@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Výpočet měření</title>
+  <style>
+      * {
+        font-family: "Microsoft YaHei", serif;
+        margin: 0;
+      }
+      h1 {
+        text-decoration: underline;
+        text-align: center;
+        font-size: 40px;
+        margin: 5px;
+      }
+      .top-info {
+        margin: 0 20px 0 20px;
+      }
+      .top-info > * {
+        margin: 5px;
+      }
+      table, th, td {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+      table {
+        margin: 30px 6vw 30px 6vw;
+      }
+      td {
+        text-align: center;
+        font-size: 20px;
+        width: 22vw;
+      }
+      p {
+        font-size: 20px;
+        text-align: center;
+        margin: 5px;
+      }
+      h3 {
+        margin: 5px;
+      }
+      .result {
+        margin-left: 20px;
+      }
+  </style>
+</head>
+<body>
+  <h1>Výpočet měření</h1>
+  <div class="top-info">
+    <h2>Vypracoval%KONCOVKA%: %STUDENT% | Dne %DATE% v %TIME%</h2>
+    <h2>Výsledek zaohruhlen na %ZAOKRUHLENI%</h2>
+    <h2>%VZOREC%</h2>
+  </div>
+  <table>
+    <tr>
+      <th>Číslo měření i</th>
+      <th>a<sub>i</sub> / %JEDNOTKA%</th>
+      <th>Δa<sub>i</sub> / %JEDNOTKA%</th>
+      <th>|Δa<sub>i</sub>| / %JEDNOTKA%</th>
+    </tr>
+%ROWS%
+    <tr>
+      <td>Součet</td>
+      <td>%SOUCET-MERENI%</td>
+      <td>%SOUCET-ROZDILU%</td>
+      <td>%SOUCET-ABSOLUTNICH-ROZDILU%</td>
+    </tr>
+    <tr>
+      <td>Průměr</td>
+      <td><b>%PRUMER-MERENI%</b></td>
+      <td><b>%PRUMER-ROZDILU%</b></td>
+      <td><b>%PRUMER-ABSOLUTNICH-ROZDILU%</b></td>
+    </tr>
+  </table>
+  <div class="result">
+    <h3>Výsledek: %ZKRATKA-VELICINY% = (%PRUMER% ± %ODCHYLKA%) %JEDNOTKA%</h3>
+    <h3>&a = %PRUMER-ABSOLUTNICH-ROZDILU% / %PRUMER-MERENI% = %ODCHYLKA-PROCENTA-CISLO% = %ODCHYLKA-PROCENTA% %</h3>
+  </div>
+  <h1>Závěr</h1>
+  <p>%BEFORE%</p>
+  <p>Dnes %JSEM% měřil%KONCOVKA% %VEC%.<br>
+    K měření %JSEM% použil%KONCOVKA% %MERIDLO%, naměřil%KONCOVKA% %JSEM% %HODNOT%%VZOREC2%.<br>
+    %VEC-FIRST-CAP% %JSEM% naměřil%KONCOVKA% na %PRUMER% %JEDNOTKA% s odchylkou %ODCHYLKA% %JEDNOTKA% (%ODCHYLKA-PROCENTA% %).%KRITIKA%</p>
+  <p>%AFTER%</p>
+</body>
+</html>

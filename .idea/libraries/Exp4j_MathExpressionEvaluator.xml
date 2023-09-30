@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Exp4j-MathExpressionEvaluator">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../.Libraries/Exp4j-MathExpressionEvaluator.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

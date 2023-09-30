@@ -1,0 +1,6 @@
+    <tr>
+      <td>%CISLO-MERENI%</td>
+      <td>%HODNOTA%</td>
+      <td>%ROZDIL%</td>
+      <td>%ABSOLUTNI-ROZDIL%</td>
+    </tr>

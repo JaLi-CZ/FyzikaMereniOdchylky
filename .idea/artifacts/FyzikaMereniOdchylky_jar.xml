@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FyzikaMereniOdchylky:jar">
+    <output-path>$PROJECT_DIR$/../../../../Meření odchylky - Program/</output-path>
+    <root id="archive" name="FyzikaMereniOdchylky.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../../../../Meření odchylky - Program/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="FyzikaMereniOdchylky" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../.Libraries/Exp4j-MathExpressionEvaluator.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

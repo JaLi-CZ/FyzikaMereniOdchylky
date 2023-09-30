@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Příručka k používání aplikace na měření odchylky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Příručka k používání aplikace Měření Odchylky</h1>
+    <img src="app-image.png" alt="Obrázek aplikace Měření odchylky">
+
+    <h2>Obecné informace</h2>
+    <p>
+        <span class="red">Červené</span> vyznačený text značí, že je zadaná hodnota nesprávná.<br>
+        <span class="green">Zeleně</span> vyznačený text značí, že je zadaná hodnota správná.<br>
+        <span class="yellow">Žlutě</span> vyznačený text značí, že zadanou hodnotu program nezná, nebo si není jistý její správností.<br>
+        Bíle vyznačený text značí, že správnost zadané hodnoty momentálně nedokáže ověřit.<br>
+    </p>
+
+    <h2>1. Naměřené hodnoty</h2>
+    <p>Do tohoto pole napište vaše vstupní hodnoty libovolné veličiiny a jednotky, které jste naměřili.<br>
+        Hodnoty <u>vždy oddělujte mezerami</u>. Desetinou čárku lze napsat tečkou nebo čárkou, není povinné ji psát.<br>
+        Měříte-li například rychlost a počítáte-li s více hodnotami, hodnoty můžete zapsat přímo vedle sebe, ale musíte je oddělit středníkem (;).<br>
+        Když do tohoto pole zadáte alespoň 1 hodnotu (vyžadované minimum), tak se v závorce objeví počet zadaných hodnot.<br>
+        Používáte-li vícehodnotný zápis, v závorce se za počtem hodnot objeví i počet podhodnot.<br>
+        Neuvedete-li u vícehodnotného zápisu stejný počet podhodnot ke všem hodnotám, výchozí číslo pro podhodnoty je 1.
+    </p>
+    <p>Zápis:<br>
+        &emsp;a) Jednohodnotný - měření délky (l) v cm<br>
+        &emsp;&emsp;1. měření:&emsp;l = 51,6 cm<br>
+        &emsp;&emsp;2. měření:&emsp;l = 52,0 cm<br>
+        &emsp;&emsp;3. měření:&emsp;l = 52,1 cm<br>
+        &emsp;&emsp;Správný zápis: <u>51,6 52,0 52,1</u><br>
+        &emsp;b) Vícehodnotný - měření rychlosti (v) v m/s - víme délku (<u>l</u>) v <u>m</u> a čas (<u>t</u>) v <u>s</u><br>
+        &emsp;&emsp;1. měření:&emsp;l = 2,4 m&emsp;t = 1,05 s<br>
+        &emsp;&emsp;2. měření:&emsp;l = 3,8 m&emsp;t = 1,54 s<br>
+        &emsp;&emsp;3. měření:&emsp;l = 1,5 m&emsp;t = 0,61 s<br>
+        &emsp;&emsp;Správný zápis: <u>2,4;1,05 3,8;1,54 1,5;0,61</u><br>
+    </p>
+
+    <h2>2. Vzorec</h2>
+    <p>Toto pole vyplňujte pouze když používáte vícehodnotný zápis nebo hodnotu potřebujete nějak upravit před výpočtem.<br>
+        Sem napište vzorec finální hodnoty, která bude vidět v tabulce. Ve vzorci používejte vstupní proměnné hodnoty, které jste 
+        definovali v poli 'Naměřené hodnoty', názvy dostupných proměnných je možné vidět nalevo.</p>
+    <h2>Dopíšu to přístě LOL</h2>
+</body>
+</html>
